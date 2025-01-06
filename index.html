@@ -1,53 +1,263 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I'm Sorry</title>
+    <title>Basic eCommerce Landing Page</title>
     <style>
         body {
-            background-color: #f8f9fa;
-            color: #333;
             font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        h1 {
-            font-size: 3em;
-            color: #d9534f;
-        }
-        p {
-            font-size: 1.2em;
-            margin: 20px 0;
-        }
-        .heart {
-            font-size: 5em;
-            color: #ff6f61;
-        }
-        button {
-            background-color: #007bff;
+
+        header {
+            background-color: #710707;
             color: white;
-            padding: 10px 20px;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .product {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+
+        .product h1 {
+            font-size: 2.5rem;
+            margin: 0.5rem 0;
+        }
+
+        .product p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .price {
+            font-size: 1.5rem;
+            color: #333;
+            margin: 1rem 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #af1077;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #1c35a3;
+        }
+
+        .links {
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .links a {
+            margin: 0 1rem;
+            color: #4CAF50;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        .reviews {
+            margin: 2rem 0;
+        }
+
+        .reviews h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .review {
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            color: #333;
+            text-align: center;
+        }
+
+        .newsletter {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .newsletter input[type="email"] {
+            padding: 0.5rem;
+            width: 300px;
+            max-width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 0.5rem;
+        }
+        footer{
+            justify-content: center;
+            align-items: centre ;
+            background-color: #af1077;
+        }
+
+        .newsletter button {
+            padding: 0.5rem 1rem;
+            background-color: #4CAF50;
+            color: white;
             border: none;
             border-radius: 5px;
-            font-size: 1em;
+            font-size: 1rem;
             cursor: pointer;
         }
-        button:hover {
-            background-color: #0056b3;
+
+        .newsletter button:hover {
+            background-color: #45a049;
+        }
+
+        @media (max-width: 768px) {
+            .product h1 {
+                font-size: 2rem;
+            }
+
+            .price {
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
-<body>
-    <body style="background-image: url(./anki.jpg);"></body>
+<body bgcolor="coffee"></body>
 
-    <div>
-        <h1>Hi Dear Ankiiii </h1>
-        <p>Misssing You A lotttttttttt !!!!!!!!!.</p>
-        <div class="heart">❤</div>
-        <p>You mean the world to me, and I promise to do better.</p>
-        <button onclick="window.location.href='https://example.com'">Let’s Talk</button>
-    </div>
+<header>
+    <h1>  😊 Smile Coffee 😊
+    </h1>
+</header>
+<body>
+    <p>"Smile Coffee is more than just a beverage; it’s an experience crafted to brighten your day. Each sip of Smile Coffee is a perfect blend of rich flavors, carefully sourced from the finest coffee farms around the world. Our commitment to quality begins with sustainably grown beans, handpicked at their peak ripeness to ensure a bold and authentic taste."</p>
 </body>
-<body><h1>Good Night My love </h1></body>
+
+<div class="container">
+    <div class="product">
+        <h1>A Cup Full of Joy</h1>
+        <p>The best product you will ever need. Get it now!</p>
+        <img src="coffee.jpg" alt="Product Image">
+        <p class="price"> start from just RS 49.99</p>
+        <a href="#" class="btn">Buy Now</a>
+    </div>
+
+    <div class="links">
+      
+        <a href="#">Contact Us :-
+            9623161846
+        </a>
+        <a href="#">Follow us on :- Instagram #smile coffee</a>
+    </div>
+
+    <div class="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">"Testy coffee! Highly recommend it." - Jane Doe</div>
+        <div class="review">"Great value for the price." - John Smith</div>
+    </div>
+
+    <div class="newsletter">
+        <h2>online order will accept.</h2>
+        <input type="email" placeholder="search">
+        <button>Place order</button>
+    </div>
+</div>
+<footer>
+    <p>Have questions? <a href="contactUs.htm" target="_blank">Contact Us</a> | <a href="learnMore.htm" target="_blank">Learn More</a></p>
+    <p>Follow us on social media: <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+</footer>
+
+
+<body><a href ="https://images.app.goo.gl/8nGAAiu323uvdSh36 " </body>
+<body>
+    <div>
+    <footer>
+        <p>&copy; 2025 Awesome coffee. Buy Your product now !!! </p>
+        
+    </footer>
+</div>
+
+</body>
+
+</body>
 </html>
+<script>
+    let cartCount = 0;
+
+    function changeImage(imageUrl) {
+        document.getElementById('main-image').src = imageUrl;
+
+        let images = document.querySelectorAll('.image-carousel img');
+        images.forEach(img => img.classList.remove('active'));
+        event.target.classList.add('active');
+    }
+
+    function addToCart() {
+        cartCount++;
+        document.getElementById('cart-count').textContent = cartCount;
+        alert("Added to Cart!");
+    }
+    function buyNow(){
+        alert("Thank You!")
+    }
+
+    function openLearnMore() {
+        window.open("https://chocolate-info", "_blank");
+    }
+
+    function openContact() {
+        window.open("https://www.example.com/contact-us", "_blank");
+    }
+</script>
+<P>Any questions or remarks?</P>
+<BR>
+<B>Email :</B> support@smilecoffee.com<BR><BR>
+<B>Phone:</B> +1 (800) 123-4567<BR><BR>
+<B>Address :</B> 123 smile coffee house, pune City, SC 54321.
+<h3>About Smile coffee</h3>
+
+<P>Coffee is more than a drink; it’s a sensory experience that captivates millions across the globe. The best coffee is a harmonious blend of quality beans, expert roasting, and precise brewing. It begins with the origin—beans grown in the nutrient-rich soils of Ethiopia, Colombia, or Jamaica. These regions are celebrated for their distinct flavors, ranging from floral and fruity to bold and chocolatey..</P>
+
+<h3>Our Products</h3>
+
+<P> <h3> smile coffee provide the bast coffe </h3>  
+
+Deluxe Chocolate Bars - Our signature products, made with a blend of rich dark chocolate and creamy milk chocolate.
+Truffle Collection - Decadent, creamy truffles filled with various flavors like hazelnut, caramel, and raspberry.
+Hot Chocolate Mixes - Perfect for cozy evenings, our premium hot chocolate mixes are made with the finest cocoa.
+Chocolate Gift Sets - A beautifully packaged selection of our finest chocolate products, perfect for gifts or personal indulgence.
+</p>
+
+<h3>Where to Buy</h3>
+
+<P>You can purchase Smile coffee products from our online store or visit one of our many partner retailers worldwide. To find a store near you, check out our Store Locator page.</P>
+
+<h3>Questions</h3>
+
+<P>If you have any questions about our products or would like to learn more about our process, feel free to reach out to us at  #support@chococrave.com.</P>
+
+
+
